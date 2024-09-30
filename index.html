@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Cash Register</h1>
+      <div class="price-tag">
+        <p id="price"></p>
+      </div>
+      <label for="cash">Enter cash paid by customer:</label>
+      <input type="number" id="cash" value="" />
+      <button id="purchase-btn">Calculate change</button>
+      <div id="change-due"></div>
+      <div class="change-drawer">
+        <h2 class="change-drawer-heading">Change drawer</h2>
+        <p id="total-cid"></p>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="coin penny">
+              1
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-pennies" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="coin silver-coin nickel">
+              5
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-nickels" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="coin silver-coin dime">
+              10
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-dimes" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="coin silver-coin quarter">
+              25
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-quarters" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="dollar-bill">
+              <div class="dollar-bill-inner">$1</div>
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-ones" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="dollar-bill">
+              <div class="dollar-bill-inner">$5</div>
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-fives" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="dollar-bill">
+              <div class="dollar-bill-inner">$10</div>
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-tens" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="dollar-bill">
+              <div class="dollar-bill-inner">$20</div>
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-twenties" class="cid-amount"></p>
+          </div>
+        </div>
+        <div class="currency-row">
+          <div class="currency-section">
+            <div class="dollar-bill">
+              <div class="dollar-bill-inner">$100</div>
+            </div>
+          </div>
+          <div class="currency-section">
+            <p id="cid-hundreds" class="cid-amount"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
