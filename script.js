@@ -110,7 +110,7 @@ const updateUI = () => {
   if (changeAry.length) {
     changeAry.forEach(changeCurrencyData => {
       const cidCurrencyDataToUpdate = cid.find(cidCurrencyData => cidCurrencyData[0] === changeCurrencyData[0]);
-      cidCurrencyDataToUpdate[1] = Math.round(cidCurrencyDataToUpdate[1] - changeCurrencyData[1]);
+      cidCurrencyDataToUpdate[1] = cidCurrencyDataToUpdate[1] - changeCurrencyData[1];
     });
   }
 
